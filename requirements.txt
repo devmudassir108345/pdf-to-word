@@ -7,3 +7,6 @@ werkzeug==2.3.7
 uuid==1.30
 gunicorn==21.2.0
 opencv-python-headless==4.9.0.80
+# force uninstall default opencv
+opencv-python==4.9.0.80
+

@@ -6,7 +6,9 @@ python-docx==0.8.11
 werkzeug==2.3.7
 uuid==1.30
 gunicorn==21.2.0
-opencv-python-headless==4.9.0.80
-# force uninstall default opencv
-opencv-python==4.9.0.80
 
+# Use only headless version to avoid GUI errors in Docker
+opencv-python-headless==4.9.0.80
+
+# Downgrade numpy for compatibility
+numpy<2.0

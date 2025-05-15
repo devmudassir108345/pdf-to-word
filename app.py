@@ -77,6 +77,11 @@ def download_file(filename):
                 pass
         
         response.call_on_close(delete_after_sending)
+
+
+        if __name__ == '__main__':
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=True, host='0.0.0.0', port=port)
         return response
     
     return jsonify({'error': 'File not found'}), 404
